@@ -9,10 +9,10 @@ LABEL authors="mangomansikka"
 WORKDIR /app
 
 # Copy the pom.xml file to the container
-COPY pom.xml /app
+COPY pom.xml /app/
 
 # Copy the entire project to the container
-COPY . /app
+COPY . /app/
 
 # Package your application
 RUN mvn package
