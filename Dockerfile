@@ -3,7 +3,7 @@
 FROM maven:latest
 
 # Set metadata information
-LABEL authors="amirdi"
+LABEL authors="mangomansikka"
 
 # Set the working directory in the container
 WORKDIR /app
@@ -18,4 +18,4 @@ COPY . /app/
 RUN mvn package
 
 # Run the main class (assuming your application has a main class)
-CMD ["java", "-jar", "target/calculator.jar"]
+CMD ["java", "-jar", "target/Calculator.jar"]
